@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>MI PRIMERA APP DE AUTENTICACION</title>
+   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="miEstilo.css">
+  </head>
+  <body>
+    <h1>INICIA SESION PARA COMPRAR TUS ENTRADAS</h1> 
+    <div id="contenedor">
+       <div id="foto"></div>
+      <button id="logueo">Con tu correo electronico</button> 
+      <div id="principal"></div>
+      <button id="guardar">recordarme</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="funcionalidadApp.js"></script> 
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCtBoz8LIFzhXMTRkCjIoxpQunFbrqGMkU",
+        authDomain: "app-de-autenticacion-66eeb.firebaseapp.com",
+        projectId: "app-de-autenticacion-66eeb",
+        storageBucket: "app-de-autenticacion-66eeb.appspot.com",
+        messagingSenderId: "582631522595",
+        appId: "1:582631522595:web:1e9e9bb1b9c0a76eabcc96",
+        measurementId: "G-FN60X003NZ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+
+
+  </body>        
+ </html>
+ 
